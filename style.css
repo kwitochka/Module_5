@@ -1,0 +1,47 @@
+
+form {
+    background-color: rgba(111, 226, 140, 0.2);
+    margin: 20px;
+}
+
+img {
+    border: 2.3px solid lightgreen;
+    border-radius: 5px;
+    margin: 15px;
+    width: 40%;
+}
+
+form,
+#keycode,
+#area {
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#keycode,
+#area {
+    width: 250px;
+    border: 2px solid lightgreen;
+    margin: 10px;
+}
+
+#area {
+    height: 150px;
+}
+
+input {
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+input:focus {
+    background: #a3dbb6;
+}

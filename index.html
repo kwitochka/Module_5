@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Module 5: Strings and Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <form name="str_form">
+            <h3>Task 1: Find out number of elements and words in the string.</h3>
+            <input type="text" placeholder="Give me a string" name="str">
+            <button class="submit_str">Submit</button>
+<p>Number of elements:
+    <span class="elem" ></span></p>
+<p>Number of words:
+    <span class="words"></span>
+</p>
+        </form>
+
+        <form action="" method="post" name="user" id = "user">
+
+            <h3>Task 3 and 4: shortening url.</h3>
+            URL:
+            <input type="text" name="url" class="link" placeholder="website">
+            <input type="submit" value="Submit address" class="submit_link">
+<p>Website:
+    <span class="result"></span>
+</p>
+
+<h3>Task 5: Form validation</h3>
+            <label for="family_name">Family name:</label>
+            <input type="text" name="family" id="family_name" placeholder="Family Name" onblur="clearSpace(this);">
+            <br>
+            <label for="first_name"> First name:</label>
+            <input type="text" name="first_name" placeholder="First Name" onblur="clearSpace(this);">
+            <br>
+            <label for="password"> Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password" onblur="clearSpace(this);">
+            <br>
+            <label for="email"> Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" onblur="clearSpace(this);">
+            <br>
+            <input type="button" value="Submit" class="submit_form" onclick="validate(document.user)">
+        </form>
+
+        <form name="key_form">
+            <input type="text" name="key" id="keycode">
+            <br>
+            <textarea id="area"></textarea>
+            <br>
+            <input type="button" value="Clear" onclick="area.value = ''" />
+        </form>
+    </div>
+    <!-- Wrapper ends -->
+
+    <div class="pictures"></div>
+    <h3>Task 2: adding pictures with JS</h3>
+    <script src="script.js"></script>
+</body>
+
+</html>
